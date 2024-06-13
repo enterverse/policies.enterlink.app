@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export function Terms() {
 	return (
 		<>
@@ -25,9 +27,14 @@ export function Terms() {
 			</p>
 			<h2>Consent</h2>
 			<p>
-				By participating in this survey, you agree to the terms outlined here.
-				If you do not agree with any of these terms, you should not participate
-				in the survey.
+				By participating in this survey, you agree to the terms outlined here,
+				and you also agree to our{" "}
+				<Link className="text-pink-400" to="/">
+					Privacy Policy
+				</Link>
+				, which describes how we handle your personal information. If you do not
+				agree with any of these terms or the privacy policy, you should not
+				participate in the survey.
 			</p>
 			<h2>Voluntary Participation</h2>
 			<p>
